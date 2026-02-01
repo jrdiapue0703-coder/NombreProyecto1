@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendario · Xerez Deportivo FC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #222; }
+    header {
+      background-color: #0033a0; color: #fff; padding: 15px 20px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    header .logo { display: flex; align-items: center; gap: 10px; font-weight: bold; font-size: 18px; }
+    header nav a { color: #fff; text-decoration: none; margin-left: 15px; font-size: 14px; font-weight: bold; }
+    header nav a:hover { text-decoration: underline; }
+    .breadcrumbs {
+      background-color: #fff; padding: 12px 30px; border-bottom: 1px solid #ddd; font-size: 14px;
+    }
+    .breadcrumbs a { color: #0033a0; text-decoration: none; }
+    .breadcrumbs a:hover { text-decoration: underline; }
+    main { max-width: 1100px; margin: 30px auto; padding: 0 15px; }
+    h1 { margin-bottom: 15px; font-size: 26px; color: #0033a0; }
+    .subtitle { margin-bottom: 25px; color: #555; }
+    .matches-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px;
+    }
+    .match-card {
+      background-color: #fff; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      overflow: hidden; display: flex; align-items: center;
+    }
+    .match-date { 
+      background-color: #0033a0; color: #fff; padding: 10px; font-weight: bold; min-width: 80px;
+    }
+    .match-teams { 
+      flex: 1; padding: 15px; border-left: 1px solid #eee; 
+    }
+    .match-title { font-size: 16px; font-weight: bold; margin-bottom: 5px; }
+    .match-info { font-size: 14px; color: #666; }
+    .match-status { 
+      padding: 10px 15px; text-align: center; font-size: 12px; font-weight: bold;
+    }
+    .status-home { background-color: #00b75a; color: white; }
+    .status-away { background-color: #ff6b35; color: white; }
+    .status-future { background-color: #0033a0; color: white; }
+    footer {
+      margin-top: 40px; padding: 20px; text-align: center; font-size: 13px; color: #777;
+      background-color: #fff; border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="https://xerezdfc.com/wp-content/uploads/2025/09/Color-Escudo-Xerez-Deportivo-FC-1024x1024.png" alt="Xerez" width="40">
+    <span>Xerez Deportivo FC · Calendario</span>
+  </div>
+  <nav>
+    <a href="./Pagina_Principal.html">Inicio</a>
+    <a href="./Pagina_1.html">Entradas</a>
+    <a href="./Pagina_4.html">Calendario</a>
+    <a href="./Pagina_5.html">Clasificación</a>
+    <a href="./Pagina_2.html">Plantilla</a>
+  </nav>
+</header>
+
+<div class="breadcrumbs">
+  <a href="index.html">Inicio</a> › Calendario
+</div>
+
+<main>
+  <h1>Calendario 2025/26</h1>
+  <p class="subtitle">Próximos partidos del Xerez Deportivo FC en Segunda RFEF Grupo 4</p>
+  
+  <section class="matches-grid">
+    <article class="match-card">
+      <div class="match-date">08/02</div>
+      <div class="match-teams">
+        <div class="match-title">Xerez Deportivo FC vs Real Jaén CF</div>
+        <div class="match-info">Domingo · 18:00h</div>
+      </div>
+      <div class="match-status status-future">Por jugar</div>
+    
+    </article>
+    <article class="match-card">
+      <div class="match-date">15/02</div>
+      <div class="match-teams">
+        <div class="match-title"> Salerm Puente Genil vs Xerez Deportivo FC</div>
+        <div class="match-info">Domingo · 17:00h</div>
+      </div>
+      <div class="match-status status-future">Por jugar</div>
+    
+    </article>
+    <article class="match-card">
+      <div class="match-date">22/02</div>
+      <div class="match-teams">
+        <div class="match-title">Xerez Deportivo FC vs Extremadura</div>
+        <div class="match-info">Domingo · X</div>
+      </div>
+      <div class="match-status status-future">Por jugar</div>
+    
+    </article>
+    <article class="match-card">
+      <div class="match-date">01/03</div>
+      <div class="match-teams">
+        <div class="match-title"> C.A Antoniano vs Xerez Deportivo FC</div>
+        <div class="match-info">Domingo · X</div>
+      </div>
+      <div class="match-status status-future">Por jugar</div>
+
+    </article>
+    <article class="match-card">
+      <div class="match-date">08/03</div>
+      <div class="match-teams">
+        <div class="match-title">Xerez Deportivo FC vs Real Jaén CF</div>
+        <div class="match-info">Domingo · X</div>
+      </div>
+      <div class="match-status status-future">Por jugar</div>
+
+    </article>
+
+  </section>
+</main>
+<footer>&copy; 2026 Xerez Deportivo FC</footer>
+</body>
+</html>

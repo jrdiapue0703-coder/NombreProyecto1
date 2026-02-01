@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla</title>
+    <meta name="description" content="Esto es la descripción de mi página web">
+    <meta name="keywords" content="html, ejercicio, ejercicio1, ejemplo">
+    <meta name="author" content="Juan Profesor">
+    <meta name="application-name" content="Plantilla.html">
+    <meta name="generator" content="VSCode">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #0033a0;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .logo img { width: 50px; height: auto; }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+        nav a:hover { text-decoration: underline; }
+        
+        .breadcrumbs {
+            background-color: #fff;
+            padding: 12px 30px;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+        }
+        .breadcrumbs a { color: #0033a0; text-decoration: none; }
+        .breadcrumbs a:hover { text-decoration: underline; }
+        
+        main {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            color: #0033a0;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .position-section {
+            margin-bottom: 40px;
+        }
+        .position-title {
+            background-color: #0033a0;
+            color: white;
+            padding: 12px 20px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 4px 4px 0 0;
+        }
+        
+        .player-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        
+        .player-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .player-card:hover {
+            transform: translateY(-3px);
+        }
+        .player-photo {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #0033a0, #0056d2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            position: relative;
+        }
+        .player-number {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255,255,255,0.2);
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .player-info {
+            padding: 20px;
+        }
+        .player-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #0033a0;
+        }
+        .player-position {
+            font-size: 16px;
+            font-weight: 500;
+            color: #555;
+        }
+        
+        footer {
+            background: #0033a0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="https://xerezdfc.com/wp-content/uploads/2025/09/Color-Escudo-Xerez-Deportivo-FC-1024x1024.png" alt="Xerez DFC">
+        <span>Xerez Deportivo FC · PRIMER EQUIPO</span>
+    </div>
+    <nav>
+        <a href="./Pagina_Principal.html">Inicio</a>
+        <a href="./Pagina_1.html">Entradas</a>
+        <a href="./Pagina_4.html">Calendario</a>
+        <a href="./Pagina_5.html">Clasificación</a>
+        <a href="./Pagina_2.html">Plantilla</a>
+    </nav>
+</header>
+
+<div class="breadcrumbs">
+    <a href="./Pagina_Principal.html">Inicio</a> › <a href="#">Primer Equipo</a> › Plantilla
+</div>
+
+<main>
+    <h1>Plantilla 2025/26</h1>
+    <p class="subtitle">Conoce a todos los jugadores del primer equipo del Xerez Deportivo FC</p>
+    
+    <div class="position-section">
+        <div class="position-title">🧤 PORTEROS</div>
+        <div class="player-grid">
+            <div class="player-card">
+                <div class="player-photo"><img src="https://xerezdfc.com/wp-content/uploads/2025/10/Florentin-Bloch-xerez-deportivo-portero.png" width="200" height="200"></div>
+                <div class="player-info">
+                    <div class="player-number">#25</div>
+                    <div class="player-name">F. Bloch</div>
+                    <div class="player-position">Portero</div>
+                </div>
+            </div>
+            <div class="player-card">
+                <div class="player-photo"><img src="https://xerezdfc.com/wp-content/uploads/2025/08/oier-arribas-xerez-deportivo-768x768.png" width="200" height="200"></div>
+                <div class="player-info">
+                    <div class="player-number">#13</div>
+                    <div class="player-name">Oier Arribas</div>
+                    <div class="player-position">Portero</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="position-section">
+        <div class="position-title">🛡️ DEFENSAS</div>
+        <div class="player-grid">
+            <div class="player-card">
+                <div class="player-photo"><img src="https://xerezdfc.com/wp-content/uploads/2026/01/ruben-cantero-xerez-dfc.png" width="200" height="200"></div>
+                <div class="player-info">
+                    <div class="player-number">#5</div>
+                    <div class="player-name">Cantero</div>
+                    <div class="player-position">Defensa Central</div>
+                </div>
+            </div>
+            <div class="player-card">
+                <div class="player-photo"><img src="https://xerezdfc.com/wp-content/uploads/2025/08/juanjo-mateo-xerez-foto-2.png" width="200" height="200"></div>
+                <div class="player-info">
+                    <div class="player-number">#22</div>
+                    <div class="player-name">Juanjo</div>
+                    <div class="player-position">Lateral Derecho</div>
+                </div>
+            </div>
+            <div class="player-card">
+                <div class="player-photo"><img src="https://xerezdfc.com/wp-content/uploads/2025/08/Ekerette-Udom-xerez-dfc.png" width="200" height="200"></div>
+                <div class="player-info">
+                    <div class="player-number">#4</div>
+                    <div class="player-name">Ekerete Udom</div>
+                    <div class="player-position">Defensa Central </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="position-section">
+        <div class="position-title">⚙️ CENTROCAMPISTAS</div>
+        <div class="player-grid">
+            <div class="player-card">
+                <div class="player-photo"><img src="https://xerezdfc.com/wp-content/uploads/2025/08/yago-gandoy-xerez-foto-2.png" width="200" height="200"></div>
+                <div class="player-info">
+                    <div class="player-number">#8</div>
+                    <div class="player-name">Y. Gandoy</div>
+                    <div class="player-position">Mediocentro</div>
+                </div>
+            </div>
+            <div class="player-card">
+                <div class="player-photo"><img src="https://xerezdfc.com/wp-content/uploads/2025/08/diego-iglesias-xerez-foto-2.png" width="200" height="200"></div>
+                <div class="player-info">
+                    <div class="player-number">#19</div>
+                    <div class="player-name">Diego Iglesias</div>
+                    <div class="player-position">Interior Derecho</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="position-section">
+        <div class="position-title">⚽ DELANTEROS</div>
+        <div class="player-grid">
+            <div class="player-card">
+                <div class="player-photo"><img src="https://xerezdfc.com/wp-content/uploads/2025/08/dieste-xerez-foto-2.png" width="200" height="200"></div>
+                <div class="player-info">
+                    <div class="player-number">#17</div>
+                    <div class="player-name">C. Dieste</div>
+                    <div class="player-position">Delantero Centro</div>
+                </div>
+            </div>
+            <div class="player-card">
+                <div class="player-photo"><img src="https://xerezdfc.com/wp-content/uploads/2025/08/ilias-xerez-foto-2.png" width="200" height="200"></div>
+                <div class="player-info">
+                    <div class="player-number">#11</div>
+                    <div class="player-name">Ilias</div>
+                    <div class="player-position">Extremo Derecho</div>
+                </div>
+            </div>
+            <div class="player-card">
+                <div class="player-photo"><img src="https://xerezdfc.com/wp-content/uploads/2026/01/samuele-longo-xerez-dfc.png" width="200" height="200"></div>
+                <div class="player-info">
+                    <div class="player-number">#9</div>
+                    <div class="player-name">S. Longo</div>
+                    <div class="player-position">Delantero</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    © 2026 Xerez Deportivo FC | Estadio Municipal de Chapín, Jerez de la Frontera
+</footer>
+</body>
+</html>

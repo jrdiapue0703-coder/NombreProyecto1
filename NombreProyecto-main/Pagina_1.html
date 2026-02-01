@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla</title>
+    <meta name="description" content="Esto es la descripción de mi página web">
+    <meta name="keywords" content="html, ejercicio, ejercicio1, ejemplo">
+    <meta name="author" content="Juan Profesor">
+    <meta name="application-name" content="Plantilla.html">
+    <meta name="generator" content="VSCode">
+     <meta charset="UTF-8">
+  <title>Eventos · Xerez Deportivo FC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background-color: #0033a0;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    header nav a:hover { text-decoration: underline; }
+
+    .breadcrumbs {
+      background-color: #fff;
+      padding: 12px 30px;
+      border-bottom: 1px solid #ddd;
+      font-size: 14px;
+    }
+    .breadcrumbs a { 
+      color: #0033a0; 
+      text-decoration: none; 
+    }
+    .breadcrumbs a:hover { 
+      text-decoration: underline; 
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+      font-size: 26px;
+      color: #0033a0;
+    }
+    .subtitle {
+      margin-bottom: 25px;
+      color: #555;
+    }
+
+    .events-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .event-card {
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .event-header {
+      background-color: #0033a0;
+      color: #fff;
+      padding: 8px 12px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .event-body {
+      padding: 14px 16px 10px;
+      flex: 1;
+    }
+    .event-title {
+      font-size: 18px;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    .event-info {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .event-info span {
+      display: block;
+    }
+    .price {
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    .event-footer {
+      padding: 10px 16px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #eee;
+    }
+    .btn-buy {
+      background-color: #00b75a;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn-buy:hover { background-color: #01934a; }
+    .status {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #888;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="https://xerezdfc.com/wp-content/uploads/2025/09/Color-Escudo-Xerez-Deportivo-FC-1024x1024.png" alt="Xerez Deportivo FC" width="40">
+    <span>Xerez Deportivo FC · Entradas</span>
+  </div>
+  <div><nav></nav></div>
+    <nav>
+      <a href="./Pagina_Principal.html">Inicio</a>
+      <a href="./Pagina_1.html">Entradas</a>
+      <a href="./4.html">Calendario</a>
+      <a href="./5.html">Clasificación</a>
+      <a href="./Pagina_2.html">Plantilla</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumbs">
+  <a href="Pagina_Principal.html">Inicio</a> › Entradas
+</div>
+
+<main>
+  <h1>Eventos disponibles</h1>
+  <p class="subtitle">Compra tus entradas oficiales para los próximos partidos del Xerez Deportivo FC.</p>
+
+  <section class="events-list">
+
+    <article class="event-card">
+      <div class="event-header">Fútbol · Liga</div>
+      <div class="event-body">
+        <h2 class="event-title">Xerez Deportivo FC vs Real Jaén CF</h2>
+        <div class="event-info">
+          <span>Domingo 8 de febrero · 18:00 h</span>
+          <span>Estadio Municipal de Chapín, Jerez de la Frontera</span>
+          <span class="price">Desde 10 €</span>
+        </div>
+      </div>
+      <div class="event-footer">
+        <span class="status">Entradas disponibles</span>
+        <button class="btn-buy">Comprar entradas</button>
+      </div>
+    </article>
+
+    <article class="event-card">
+      <div class="event-header">Fútbol · Liga</div>
+      <div class="event-body">
+        <h2 class="event-title">Xerez Deportivo FC vs Córdoba B</h2>
+        <div class="event-info">
+          <span>Sábado 21 de febrero · 17:00 h</span>
+          <span>Estadio Municipal de Chapín, Jerez de la Frontera</span>
+          <span class="price">Desde 12 €</span>
+        </div>
+      </div>
+      <div class="event-footer">
+        <span class="status">Entradas disponibles</span>
+        <button class="btn-buy">Comprar entradas</button>
+      </div>
+    </article>
+
+    <article class="event-card">
+      <div class="event-header">Abonos · Temporada</div>
+      <div class="event-body">
+        <h2 class="event-title">Abono segunda vuelta 2025-26</h2>
+        <div class="event-info">
+          <span>Válido para todos los partidos de liga en casa</span>
+          <span class="price">Desde 60 €</span>
+        </div>
+      </div>
+      <div class="event-footer">
+        <span class="status">A la venta</span>
+        <button class="btn-buy">Comprar abono</button>
+      </div>
+    </article>
+
+  </section>
+</main>
+
+<footer>
+  &copy; 2026 Xerez Deportivo FC · Plataforma oficial de venta de entradas.
+</footer>
+</body>
+</html>
